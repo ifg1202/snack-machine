@@ -1,6 +1,6 @@
-package com.qacg.snackmachine.application.model
+package com.qacg.snackmachine.application.domain
 
-class SnackMachine {
+class SnackMachine extends Entity {
 
     Money moneyInside
     Money moneyInTransaction
