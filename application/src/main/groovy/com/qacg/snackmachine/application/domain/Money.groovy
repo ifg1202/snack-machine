@@ -5,6 +5,14 @@ import groovy.transform.EqualsAndHashCode
 @EqualsAndHashCode
 final class Money {
 
+    static final Money NONE = new Money(0,0,0,0,0,0)
+    static final Money CENT = new Money(1,0,0,0,0,0)
+    static final Money TEN_CENT = new Money(0,1,0,0,0,0)
+    static final Money QUARTER = new Money(0,0,1,0,0,0)
+    static final Money DOLLAR = new Money(0,0,0,1,0,0)
+    static final Money FIVE_DOLLAR = new Money(0,0,0,0,1,0)
+    static final Money TWENTY_DOLLAR = new Money(0,0,0,0,0,1)
+
     final int oneCentCount
     final int tenCentCount
     final int quarterCount
